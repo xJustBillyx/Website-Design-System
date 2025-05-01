@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+div .nav-list{
+    text-align: center;
+    margin: 40px;
+    padding: 20px;
+}
+
+.main-heading{
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+
+.nav-list li{
+    display: inline;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    font-size: large;
+}
+
+.nav-list li a::after{
+    position: absolute;
+    content: " ";
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: #7FFFD4;
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    margin-bottom: -10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+.nav-list li a{
+    text-decoration: none;
+    position: relative;
+    color: #000;
+}
+
+.nav-list li a:hover{
+    background-color: lightgray;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+    transition: background-color 0.3s ease-in-out;
+    color: #007bff;
+    padding: 5px;
+}
+.nav-list li a:active{
+    background-color: #007bff;
+    color: lightgray;
+    border-radius: 5px;
+}
+
+.nav-list li a:focus{
+    outline: none;
+    background-color: #007bff;
+    color: lightgray;
+    border-radius: 5px;
+}
+.nav-list li a:focus::after{
+    background-color: #007bff;
+    color: lightgray;
+    border-radius: 5px;
+}
+
+
+#color{
+    border: 3px solid #007bff;
+    border-radius: 5px;
+    padding: 50px;
+    margin: 50px;
+    position: relative;
+}
+
+#color h2{
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2rem;
+    color: #007bff;
+    -webkit-text-stroke: #000 0.3px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.color-panel {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    margin: 10px auto;
+    border: 1px solid #000;
+    min-height: 100px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.cool-blue {
+    background-color: #60B5FF;
+    color: #000;
+}
+
+.light-blue {
+    background-color: #A4D8FF;
+    color: #000;
+}
+
+.beige {
+    background-color: #F5F5DC;
+    color: #000;
+}
+
+.orange {
+    background-color: #FFA500;
+    color: #000;
+}
+
+#font{
+    border: 3px solid #007bff;
+    border-radius: 5px;
+    padding: 50px;
+    margin: 50px;
+    position: relative;
+}
+
+#font h2{
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2rem;
+    color: #007bff;
+    -webkit-text-stroke: #000 0.3px;
+}
+
+.font-panel {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin: 5px auto;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #000;
+    min-height: 100px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.3em;
+    line-height: 2.0;
+    cursor: pointer;;
+}
+
+.regular {
+    font-style: normal;
+}
+  
+.italic {
+    font-style: italic;
+}
+  
+.bold {
+    font-weight: 700;
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+}
+
+.cascadia-mono {
+    font-family: "Cascadia Mono", sans-serif;
+}
+
+#typography{
+    border: 3px solid #007bff;
+    border-radius: 5px;
+    padding: 50px;
+    margin: 50px;
+    position: relative;
+}
+
+#typography .font-label {
+    text-decoration: underline;
+}
+
+#typography .title{
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2rem;
+    color: #007bff;
+    -webkit-text-stroke: #000 0.3px;
+}
+
+#font .font-label{
+    color: #FF9149;
+}
+
+#color a{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#color a:hover{
+    color: #000;
+}
+
+#font a{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#font a:hover{
+    color: #000;
+}
+
+#typography a{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#typography a:hover{
+    color: #000;
+}
+
+/* Default styles (for larger screens) */
+body {
+    font-size: 16px;
+}
+
+/* Small devices (phones, less than 600px) */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .nav-list li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .color-panel, .font-panel {
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    .nav-list li {
+        margin: 8px;
+    }
+
+    .color-panel, .font-panel {
+        width: 48%;
+    }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .color-panel, .font-panel {
+        width: 32%;
+        padding: 40px;
+    }
+
+
+
+    #typography .font-panel {
+        width: 50%;
+        padding: 20px;
+    }
+}
+
